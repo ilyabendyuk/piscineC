@@ -1,0 +1,26 @@
+mi-u1% ./do-op 123 + 123
+246
+mi-u1% ./do-op 123 +p 123
+0
+mi-u1% ./do-op 123 p+p 123
+0
+mi-u1% ./do-op 123 +  p123
+123
+mi-u1% ./do-op 123 " +"  p123
+0
+mi-u1% ./do-op 123 %p 123
+0
+mi-u1% ./do-op -2147483647 - 1
+-2147483648
+mi-u1% ./do-op 123 % abc
+Stop : modulo by zero
+mi-u1% ./do-op 123 / 0
+Stop : division by zero
+mi-u1% ./do-op 123 "/ " 0
+0
+mi-u1% make clean
+mi-u1% make
+mi-u1% ./do-op
+mi-u1% ./do-op 1 + 1
+2
+mi-u1%
